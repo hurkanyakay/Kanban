@@ -1,0 +1,181 @@
+html {
+  position: relative;
+  height: 100%;
+}
+.header{
+  background-color: #dddddd;
+  padding: 10px;
+}
+textarea{
+  min-height: 250px;
+}
+body {
+  font: 14px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  color: #4d4d4d;
+  font-weight: normal;
+  padding: 0 10px;
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  padding: 10px 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100%;
+  white-space: nowrap;
+  zoom: 1;
+}
+.main:before,
+.main:after {
+  content: "";
+  display: table;
+}
+.main:after {
+  clear: both;
+}
+.editColumn{
+  display: none;
+}
+.desk:hover .editColumn{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.addColumn{
+  display: none;
+}
+.desk:hover .addColumn{
+    display: block;
+    position: absolute;
+    top: 0;
+    right:35px;
+}
+.desk,
+.desk-placeholder,
+.desk-placeholder:hover {
+  width: 270px;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100px;
+  background-color: rgba(226, 228, 230, 0.7);
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  padding-bottom: 20px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.desk .desk-head,
+.desk-placeholder .desk-head,
+.desk-placeholder:hover .desk-head {
+  position: relative;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  zoom: 1;
+}
+.desk .desk-head:before,
+.desk-placeholder .desk-head:before,
+.desk-placeholder:hover .desk-head:before,
+.desk .desk-head:after,
+.desk-placeholder .desk-head:after,
+.desk-placeholder:hover .desk-head:after {
+  content: "";
+  display: table;
+}
+.desk-name{
+  cursor: pointer;
+}
+.desk .desk-head:after,
+.desk-placeholder .desk-head:after,
+.desk-placeholder:hover .desk-head:after {
+  clear: both;
+}
+.desk .desk-head .desk-name,
+.desk-placeholder .desk-head .desk-name,
+.desk-placeholder:hover .desk-head .desk-name {
+  font-weight: bold;
+  white-space: normal;
+  width: 100%;
+}
+.desk-items {
+  overflow-y: auto;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.desk-items .placeholder,
+.desk-items .placeholder:hover {
+  height: 161px;
+  background-color: #c2c2c2;
+}
+.item {
+  position: relative;
+  width: 90%;
+  margin: 0 auto 10px;
+  background: #fff;
+  min-height: 100px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -o-transition: 0.15s;
+  -ms-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.editCard{
+  display: none;
+}
+.item:hover .editCard{
+  display: block;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.item:hover {
+  background: #f7f7f7;
+}
+.item .item-name {
+  padding: 5px 10px;
+  border-bottom: 1px solid #dbdbdb;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-world;
+  font-weight: bold;
+}
+.item .item-container {
+  padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  zoom: 1;
+}
+.item .item-container:before,
+.item .item-container:after {
+  content: "";
+  display: table;
+}
+.item .item-container:after {
+  clear: both;
+}
+.item .item-container .item-content {
+  white-space: normal;
+}
+
+.item .item-container .item-content p {
+  margin: 5px 0;
+}

@@ -158,7 +158,7 @@ export default class ModalComp extends React.Component {
 
     }else if(type=="Export"){
       title="Export";
-      content=<div className="row"><div className="col-md-12"><FormControl componentClass="textarea" value={ this.state.text1 } placeholder="Export" />
+      content=<div className="row"><div className="col-md-12"><FormControl componentClass="textarea" value={ this.state.text1 } placeholder="Export" onChange={()=>{}} />
        </div>
        </div>
     }
